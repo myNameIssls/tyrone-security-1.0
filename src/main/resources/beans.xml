@@ -24,7 +24,17 @@
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
 	
-	<context:property-placeholder location="classpath:jdbc.properties"/>
+	<!-- 加载Properties文件 -->
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:jdbc.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+<!-- 	<context:property-placeholder location="classpath:jdbc.properties"/> -->
+	
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
 		<property name="driverClass" value="${driverClass}"/>
 		<property name="jdbcUrl" value="${jdbcUrl}"/>
