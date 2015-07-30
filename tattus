@@ -1,0 +1,23 @@
+[1mdiff --git a/src/main/resources/beans.xml b/src/main/resources/beans.xml[m
+[1mindex 8e2c4be..3b24ef9 100644[m
+[1m--- a/src/main/resources/beans.xml[m
+[1m+++ b/src/main/resources/beans.xml[m
+[36m@@ -54,7 +54,6 @@[m
+ 		<property name="dataSource" ref="dataSource" />[m
+ 		<property name="configLocation" value="classpath:/mybatis-config.xml" />[m
+ 		<property name="mapperLocations" value="classpath:/cn/tyrone/security/mappers/*.xml" />[m
+[31m-<!-- 		<property name="typeAliasesPackage" value="cn.tyrone.security.bean"></property> -->[m
+ 	</bean>[m
+ [m
+ 	<!-- 注解驱动事务管理 -->[m
+[1mdiff --git a/src/main/resources/mybatis-config.xml b/src/main/resources/mybatis-config.xml[m
+[1mindex f184068..210cb97 100644[m
+[1m--- a/src/main/resources/mybatis-config.xml[m
+[1m+++ b/src/main/resources/mybatis-config.xml[m
+[36m@@ -3,4 +3,5 @@[m
+   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"[m
+   "http://mybatis.org/dtd/mybatis-3-config.dtd">[m
+ <configuration>[m
+[32m+[m[41m	[m
+ </configuration>[m
+\ No newline at end of file[m
