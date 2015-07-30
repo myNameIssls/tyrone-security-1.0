@@ -4,26 +4,24 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import cn.tyrone.security.bean.blogUser;
-import cn.tyrone.security.dao.blogUserMapper;
 import cn.tyrone.security.service.ISecurityUserService;
 
 @Service
 public class SecurityUserServiceBean implements ISecurityUserService {
 	
-	@Resource blogUserMapper a;
+//	@Resource blogUserMapper a;
 	
 	public void test(){
-		System.out.println("²âÊÔÒµÎñ²ã½øÀ´ÁË");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½");
 		
-		blogUser bu = new blogUser();
-		bu.setUserEmial("aa@qq.com");
-		bu.setUserName("ÕÆÉÏµçÄÔ");
-		bu.setUserPassword("123");
+//		blogUser bu = new blogUser();
+//		bu.setUserEmial("aa@qq.com");
+//		bu.setUserName("ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½");
+//		bu.setUserPassword("123");
+//		
+//		int insertSelective = a.insertSelective(bu);
 		
-		int insertSelective = a.insertSelective(bu);
-		
-		System.out.println("½á¹û£º\t" + insertSelective);
+//		System.out.println("ï¿½ï¿½ï¿½\t" + insertSelective);
 		
 	}
 }
