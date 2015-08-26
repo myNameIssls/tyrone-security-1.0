@@ -60,6 +60,6 @@
 			enableCountByExample="false" enableDeleteByExample="false"
 			enableSelectByExample="false" enableUpdateByExample="false">
 			<generatedKey column="ID" sqlStatement="JDBC" identity="true" />
-		</table>		
+		</table>
 	</context>
 </generatorConfiguration>
