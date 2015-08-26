@@ -1,82 +1,55 @@
 package cn.tyrone.security.bean;
 
-import java.io.Serializable;
+import java.util.List;
 
-/**
- * 用户类
- * @author sls
- * @date 2015-04-23
- * 
- */
-public class SecurityUser implements Serializable {
-	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+public class SecurityUser {
+    private String userId;
 
-	/**
-	 * 主键
-	 */
-	private String userID;
-	
-	/**
-	 * 用户名
-	 */
-	private String userName;
-	
-	/**
-	 * 密码
-	 */
-	private String password;
-	
-	/**
-	 * 验证码
-	 */
-	private String captcha;
-	
-	/**
-	 * 是否启用
-	 */
-	private boolean enabled;
+    private String loginName;
 
-	public String getUserID() {
-		return userID;
+    private String password;
+
+    private String status;
+
+    private List<SecurityRole> securityRoles;
+    
+    public List<SecurityRole> getSecurityRoles() {
+		return securityRoles;
 	}
 
-	public void setUserID(String userID) {
-		this.userID = userID;
+	public void setSecurityRoles(List<SecurityRole> securityRoles) {
+		this.securityRoles = securityRoles;
 	}
 
-	public String getUserName() {
-		return userName;
-	}
+	public String getUserId() {
+        return userId;
+    }
 
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
 
-	public String getPassword() {
-		return password;
-	}
+    public String getLoginName() {
+        return loginName;
+    }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public void setLoginName(String loginName) {
+        this.loginName = loginName;
+    }
 
-	public String getCaptcha() {
-		return captcha;
-	}
+    public String getPassword() {
+        return password;
+    }
 
-	public void setCaptcha(String captcha) {
-		this.captcha = captcha;
-	}
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-	public boolean isEnabled() {
-		return enabled;
-	}
+    public String getStatus() {
+        return status;
+    }
 
-	public void setEnabled(boolean enabled) {
-		this.enabled = enabled;
-	}
+    public void setStatus(String status) {
+        this.status = status;
+    }
 }

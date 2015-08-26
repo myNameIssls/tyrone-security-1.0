@@ -3,7 +3,7 @@
 <generatorConfiguration>
 	<!-- 连接数据库的JAR包（根据自己的实际情况来配置此处为Oracle的） -->
 	<classPathEntry
-		location="E:\\repository\\mysql\\mysql-connector-java\\5.1.35\\mysql-connector-java-5.1.35.jar" />
+		location="F:\\mvnrepository\\mysql\\mysql-connector-java\\5.1.35\\mysql-connector-java-5.1.35.jar" />
 
 	<context id="context1" targetRuntime="MyBatis3">
 		<!-- 去掉生成出来的代码的注解 -->
@@ -30,7 +30,7 @@
 			<property name="trimStrings" value="false" />
 		</javaModelGenerator>
 
-		<sqlMapGenerator targetPackage="cn.tyrone.security.mappers" targetProject="tyrone-security">
+		<sqlMapGenerator targetPackage="mappings" targetProject="tyrone-security">
 			<property name="enableSubPackages" value="true" />
 		</sqlMapGenerator>
 
@@ -56,7 +56,7 @@
 			暂不明白 <property name="runtimeTableName" value="Busi_Param" />
 		</table> -->
 
-		<table tableName="blog_user" domainObjectName="blogUser"
+		<table tableName="SECURITY_ROLE" domainObjectName="SecurityRole"
 			enableCountByExample="false" enableDeleteByExample="false"
 			enableSelectByExample="false" enableUpdateByExample="false">
 			<generatedKey column="ID" sqlStatement="JDBC" identity="true" />
