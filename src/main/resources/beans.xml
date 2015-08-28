@@ -62,7 +62,7 @@
 		<property name="dataSource" ref="dataSource" />
 		<property name="typeHandlersPackage" value="cn.tyrone.security.bean"></property>
 		<property name="configLocation" value="classpath:/mybatis-config.xml" />
-		<property name="mapperLocations" value="classpath:classpath:/mappings/**/*.xml" />
+		<property name="mapperLocations" value="classpath:/mappings/**/*.xml" />
 	</bean>
 
 	<!-- 注解驱动事务管理 -->
