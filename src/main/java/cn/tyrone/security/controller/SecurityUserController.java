@@ -7,16 +7,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import cn.tyrone.security.service.ISecurityUserService;
 
-@SuppressWarnings("restriction")
 @Controller
 @RequestMapping("/securityuser")
 public class SecurityUserController extends BaseController {
 	
 	@Resource ISecurityUserService securityUserService;
 	
-	@RequestMapping("/test")
-	public void test(){
-		securityUserService.test();
-		System.out.println("4��");
+	@RequestMapping("/list")
+	public String list(){
+		System.out.println("********************");
+		return "security/userlist";
 	}
 }

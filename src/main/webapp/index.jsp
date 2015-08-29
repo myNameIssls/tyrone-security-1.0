@@ -4,20 +4,36 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Insert title here</title>
+	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/js/jquery-easyui-1.4.3/themes/default/easyui.css">
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/js/jquery-easyui-1.4.3/themes/icon.css">
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-easyui-1.4.3/jquery.min.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-easyui-1.4.3/jquery.easyui.min.js"></script>
+	
+	<script type="text/javascript">
+		function addTab(title, url){
+		    if ($('#tt').tabs('exists', title)){
+		        $('#tt').tabs('select', title);
+		    } else {
+		        var content = '<iframe scrolling="auto" frameborder="0"  src="'+url+'" style="width:100%;height:100%;"></iframe>';
+		        $('#tt').tabs('add',{
+		            title:title,
+		            content:content,
+		            closable:true
+		        });
+		    }
+		}
+	</script>
+	
 </head>
 <body class="easyui-layout">
 	<div data-options="region:'north',border:true" style="height:60px;padding:10px">north region</div>
-	<div data-options="region:'west',split:true,title:'West'" style="width:150px;padding:10px;">west content</div>
-	<div data-options="region:'east',split:true,collapsed:true,title:'East'" style="width:100px;padding:10px;">east region</div>
+	<div data-options="region:'west',split:true,title:'导航菜单'" style="width:250px;padding:0px;">
+		<a href="#" onclick="addTab('用户管理列表','${pageContext.request.contextPath}/securityuser/list')">用户管理列表</a>
+	</div>
 	<div data-options="region:'south',border:true" style="height:50px;padding:10px;">south region</div>
-	<div data-options="region:'center',title:'Center'"></div>
+	<div data-options="region:'center'" id="tt" class="easyui-tabs">
+		<div title="Home"></div>
+	</div>
 </body>
-<!-- <body> -->
-<!-- 	哈哈哈哈哈哈 -->
-<!-- </body> -->
 </html>
