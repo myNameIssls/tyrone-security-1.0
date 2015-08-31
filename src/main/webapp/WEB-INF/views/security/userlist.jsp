@@ -10,24 +10,24 @@
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-easyui-1.4.3/jquery.min.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-easyui-1.4.3/jquery.easyui.min.js"></script>
 </head>
-<body class="easyui-layout">
-
-<!-- 	<div id="cc"  class="easyui-layout" style="width:700px;height:350px;"> -->
-        <div data-options="region:'north'" style="height:100px"></div>
-        <div data-options="region:'center'" style="padding:20px">
-            <p>Panel Content.</p>
-            <p>Panel Content.</p>
-            <p>Panel Content.</p>
-            <p>Panel Content.</p>
-            <p>Panel Content.</p>
-        </div>
-<!--     </div> -->
-
-<!-- 	<div data-options="region:'north',border:false" style="height:100px;padding:10px"> -->
-<!-- 		条件查询区域 -->
-<!-- 	</div> -->
-<!-- 	<div data-options="region:'center'" id="tt"> -->
-<!-- 		数据区域 -->
-<!-- 	</div>	 -->
+<body>
+	*************************************************************************
+	<div id="lay" class="easyui-layout" style="width: 100%;height:100%" >
+		<div region="north" title="用户查询" collapsed=true style="height:50px;" >
+<!-- 			<form id="mysearch" method="post"> -->
+<!-- 					用户名:&nbsp;&nbsp;&nbsp;<input name="username" class="easyui-validatebox"  value="" /> -->
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					开始时间:<input name="startTime"  class="easyui-datetimebox" editable="false" style="width:160px;"  value="" />	 -->
+<!-- 					结束时间:<input name="endTime"  class="easyui-datetimebox" editable="false" style="width:160px;"  value="" />	 -->
+<!-- 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- 					<a id="searchbtn" class="easyui-linkbutton">查询</a> <a id="clearbtn" class="easyui-linkbutton">清空</a> -->
+<!-- 			</form> -->
+		123213
+		</div>
+		<div region="center" style="height:500px;">
+			哈哈哈哈kw
+<!-- 			<table id="t_user"></table> -->
+		</div>
+	</div>
 </body>
 </html>
