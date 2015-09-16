@@ -10,22 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/js/jquery-easyui-1.4.3/themes/icon.css">
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-easyui-1.4.3/jquery.min.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-easyui-1.4.3/jquery.easyui.min.js"></script>
-	
-	<script type="text/javascript">
-		function addTab(title, url){
-		    if ($('#tt').tabs('exists', title)){
-		        $('#tt').tabs('select', title);
-		    } else {
-		        var content = '<iframe scrolling="auto" frameborder="0"  src="'+url+'" style="width:100%;height:100%;"></iframe>';
-		        $('#tt').tabs('add',{
-		            title:title,
-		            content:content,
-		            closable:true
-		        });
-		    }
-		}
-	</script>
-	
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/JQueryEasyUI.js"></script>	
 </head>
 <body class="easyui-layout">
 	<div data-options="region:'north',border:true" style="height:60px;padding:10px">north region</div>
