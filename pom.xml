@@ -208,6 +208,12 @@
 			<version>3.1.2</version>
 		</dependency>
 		
+		<dependency>
+			<groupId>cn.tyrone</groupId>
+			<artifactId>security-core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
 	</dependencies>
 	<build>
 		<finalName>tyrone-security</finalName>

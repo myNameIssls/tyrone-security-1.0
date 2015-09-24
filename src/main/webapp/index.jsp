@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="/core/taglib.jsp" %>
+<%-- <%@ taglib prefix="security" uri="http://www.tyronesoft.cn/tyrone" %> --%>
+<%@ taglib uri="http://www.tyronesoft.cn/tyrone" prefix="security" %>
 <%-- <%@ taglib uri="http://www.tyronesoft.cn" prefix="security" %>         --%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -17,5 +19,6 @@
 	<div data-options="region:'center'" id="tt" class="easyui-tabs">
 		<div title="Home"></div>
 	</div>
+<%-- 	<security:permission value=""></security:permission> --%>
 </body>
 </html>
