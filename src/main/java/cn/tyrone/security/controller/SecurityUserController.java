@@ -5,7 +5,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import cn.tyrone.security.annotation.RequestPermission;
+import cn.tyrone.security.core.annotation.RequestPermission;
 import cn.tyrone.security.service.ISecurityUserService;
 
 @Controller
